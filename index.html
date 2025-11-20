@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Seven Light Energy – Strom & Gas</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+  <title>SevenLight Energy – Smarter Wechsel für Strom & Gas</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="header">
-    <div class="container nav">
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="nav-inner">
       <div class="logo">Seven<span>Light</span> Energy</div>
       <nav class="nav-links">
-        <a href="#tarife">Tarife</a>
-        <a href="#vorteile">Vorteile</a>
-        <a href="#ablauf">So funktioniert's</a>
+        <a href="#tarifrechner">Tarifrechner</a>
+        <a href="#produkte">Tarife</a>
         <a href="#partner">Vertriebspartner</a>
         <a href="#faq">FAQ</a>
         <a href="#kontakt" class="nav-cta">Kontakt</a>
@@ -26,315 +26,243 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1>Smarter Wechsel für Strom & Gas</h1>
-        <p>
-          Seven Light Energy verbindet digitale Prozesse mit persönlicher Beratung.
-          Für Haushalte, Gewerbe und Vertriebspartner, die mehr als nur einen Tarif wollen.
+    <div class="hero-gradient"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>Smarter Wechsel für Strom &amp; Gas</h1>
+        <p class="hero-sub">
+          Digitale Abwicklung, persönliche Beratung – SevenLight Energy bringt Haushalte, Gewerbe
+          und Vertriebspartner in ein starkes Netzwerk.
         </p>
-        <div class="hero-actions">
-          <a href="#tarife" class="btn primary">Tarife vergleichen</a>
-          <a href="#partner" class="btn ghost">Partner werden</a>
-        </div>
+
         <div class="hero-badges">
-          <span>✔ Keine Wechselgebühr</span>
-          <span>✔ 100 % digitaler Vertragsabschluss</span>
-          <span>✔ Zugang zu Top-Versorgern</span>
+          <span>✓ 100&nbsp;% digital</span>
+          <span>✓ Zugang zu Top-Versorgern</span>
+          <span>✓ Persönliche Betreuung</span>
         </div>
+
+        <div class="hero-actions">
+          <a href="#tarifrechner" class="btn btn-primary">Tarife vergleichen</a>
+          <a href="#partner" class="btn btn-outline">Vertriebspartner werden</a>
+        </div>
+
+        <p class="hero-mini">
+          <strong>Hinweis:</strong> Demo-Plattform – keine echten Vertragsabschlüsse, aber echtes Gefühl.
+        </p>
       </div>
-      <div class="hero-card">
-        <h2>Übersicht in Sekunden</h2>
-        <p>Trage Verbrauch und Postleitzahl ein, wir erledigen den Rest.</p>
-        <div class="form-row">
-          <label>Postleitzahl</label>
-          <input type="text" placeholder="z. B. 80331" />
+
+      <div class="hero-right" id="tarifrechner">
+        <div class="card">
+          <h2>Tarifrechner Demo</h2>
+          <p class="card-sub">In 30 Sekunden zum passenden Tarif – Beispielansicht.</p>
+
+          <div class="form-group">
+            <label for="plz">Postleitzahl</label>
+            <input id="plz" type="text" placeholder="z. B. 80331" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="strom">Stromverbrauch (kWh/Jahr)</label>
+              <input id="strom" type="number" placeholder="z. B. 2.800" />
+            </div>
+            <div class="form-group">
+              <label for="gas">Gasverbrauch (kWh/Jahr)</label>
+              <input id="gas" type="number" placeholder="optional" />
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-full" type="button">Unverbindliche Demo-Berechnung</button>
+
+          <p class="card-hint">Keine echten Daten, nur Beispiel – ideal für Präsentationen &amp; Vertrieb.</p>
         </div>
-        <div class="form-row">
-          <label>Jahresverbrauch (Strom)</label>
-          <input type="number" placeholder="in kWh" />
-        </div>
-        <div class="form-row">
-          <label>Jahresverbrauch (Gas)</label>
-          <input type="number" placeholder="in kWh" />
-        </div>
-        <button class="btn primary full">Unverbindliche Übersicht anzeigen</button>
-        <p class="hint">* Demo-Formular – keine echten Datenübertragungen.</p>
       </div>
     </div>
   </section>
 
-  <!-- Tarife / Produkte -->
-  <section id="tarife" class="section">
-    <div class="container">
+  <!-- PRODUKTE / TARIFE -->
+  <section class="section" id="produkte">
+    <div class="section-header">
       <h2>Tarifwelten für jede Situation</h2>
-      <p class="section-subtitle">
-        Egal ob Single-Haushalt, Familie oder kleines Unternehmen – wir haben
-        Zugriff auf passende Strom- und Gastarife etablierter Anbieter.
-      </p>
-
-      <div class="card-grid">
-        <article class="card">
-          <h3>Smart Home Strom</h3>
-          <p class="card-tag">Privatkunden</p>
-          <p class="card-text">
-            Moderne Stromtarife mit fairen Konditionen, Preisgarantien und
-            Ökostrom-Option – ideal für Wohnungen & Häuser.
-          </p>
-          <ul class="card-list">
-            <li>✔ Flexible Laufzeiten</li>
-            <li>✔ Online-Vertragsverwaltung</li>
-            <li>✔ Optional 100 % Ökostrom</li>
-          </ul>
-          <a href="#kontakt" class="card-link">Beratung anfragen</a>
-        </article>
-
-        <article class="card">
-          <h3>Gas Komfort</h3>
-          <p class="card-tag gas">Gas</p>
-          <p class="card-text">
-            Stabile Gastarife mit transparenten Arbeitspreisen – perfekt für
-            Haushalte mit hohem Wärmebedarf.
-          </p>
-          <ul class="card-list">
-            <li>✔ Transparente Arbeitspreise</li>
-            <li>✔ Keine versteckten Gebühren</li>
-            <li>✔ Digitaler Vertragswechsel</li>
-          </ul>
-          <a href="#kontakt" class="card-link">Gas-Angebot sichern</a>
-        </article>
-
-        <article class="card">
-          <h3>Business Energy</h3>
-          <p class="card-tag business">Gewerbe</p>
-          <p class="card-text">
-            Individuelle Lösungen für kleine Unternehmen, Büros, Praxen und
-            Standorte mit höherem Verbrauch.
-          </p>
-          <ul class="card-list">
-            <li>✔ Persönliche Betreuung</li>
-            <li>✔ Bündelung mehrerer Standorte</li>
-            <li>✔ Strukturvertriebsfähige Abwicklung</li>
-          </ul>
-          <a href="#kontakt" class="card-link">Business-Termin vereinbaren</a>
-        </article>
-      </div>
+      <p>Vom Single-Haushalt bis zum Gewerbebetrieb – modulare Strom- &amp; Gastarife mit klaren Vorteilen.</p>
     </div>
-  </section>
 
-  <!-- Vorteile -->
-  <section id="vorteile" class="section soft-bg">
-    <div class="container">
-      <h2>Warum Seven Light Energy?</h2>
-      <div class="benefit-grid">
-        <div class="benefit">
-          <h3>Digital & persönlich</h3>
-          <p>
-            Moderne Online-Strecken kombiniert mit echten Ansprechpartnern –
-            für Kunden, Vermittler und Vertriebspartner.
-          </p>
-        </div>
-        <div class="benefit">
-          <h3>Transparente Prozesse</h3>
-          <p>
-            Klare Statusanzeigen vom Antrag bis zur Belieferung. Jeder Schritt
-            im Wechsel ist nachvollziehbar.
-          </p>
-        </div>
-        <div class="benefit">
-          <h3>Starke Partner</h3>
-          <p>
-            Zugang zu geprüften Energieversorgern und Spezialtarifen
-            über unser Netzwerk.
-          </p>
-        </div>
-        <div class="benefit">
-          <h3>Bereit für Strukturvertrieb</h3>
-          <p>
-            Provisionsfähige Abwicklung, Downline-Reporting und digitaler
-            Onboarding-Prozess für Vertriebsteams.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ablauf -->
-  <section id="ablauf" class="section">
-    <div class="container">
-      <h2>So läuft der Wechsel ab</h2>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <div>
-            <h3>Daten eingeben</h3>
-            <p>
-              Postleitzahl, Verbrauch und gewünschte Energieart (Strom, Gas oder beides)
-              werden erfasst – online oder mit einem Ansprechpartner.
-            </p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <div>
-            <h3>Angebote prüfen</h3>
-            <p>
-              Wir vergleichen passende Tarife unserer Partner und stellen dir
-              eine klare, verständliche Übersicht zusammen.
-            </p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <div>
-            <h3>Digital unterschreiben</h3>
-            <p>
-              Du bestätigst den gewünschten Tarif digital – wir kümmern uns um
-              Kündigung, Ummeldung und die Abwicklung mit dem Versorger.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vertriebspartner -->
-  <section id="partner" class="section dark">
-    <div class="container partner-grid">
-      <div>
-        <h2>Für Vertriebspartner & Teams</h2>
-        <p class="section-subtitle light">
-          Seven Light Energy ist die Basis für moderne Energie-Vertriebssysteme:
-          digital, skalierbar und provisionsstark.
-        </p>
-        <ul class="partner-list">
-          <li>✔ Digitale Vertragsstrecke für Strom & Gas</li>
-          <li>✔ Klare Provisionslogik für Einzelvermittler & Strukturen</li>
-          <li>✔ Dashboard für Vertragsstatus & Teamleistung (Roadmap)</li>
-          <li>✔ Unterstützung beim Onboarding neuer Partner</li>
+    <div class="cards-grid">
+      <article class="card card-soft">
+        <h3>Smart Home Strom</h3>
+        <p class="card-sub">Moderne Stromtarife für Wohnungen &amp; Häuser.</p>
+        <ul class="list-check">
+          <li>Flexible Laufzeiten &amp; faire Konditionen</li>
+          <li>100 % digitale Vertragsverwaltung</li>
+          <li>Optional Ökostrom-Option</li>
         </ul>
-        <a href="#kontakt" class="btn light">Infos für Vertriebspartner anfordern</a>
+        <a href="#kontakt" class="card-link">Beratung anfragen →</a>
+      </article>
+
+      <article class="card card-soft">
+        <h3>Gas Komfort</h3>
+        <p class="card-sub">Transparente Gastarife für hohen Wärmebedarf.</p>
+        <ul class="list-check">
+          <li>Klare Arbeitspreise ohne versteckte Gebühren</li>
+          <li>Stabile Konditionen &amp; planbare Kosten</li>
+          <li>Digitale Wechselunterstützung</li>
+        </ul>
+        <a href="#kontakt" class="card-link">Gas-Angebot sichern →</a>
+      </article>
+
+      <article class="card card-soft">
+        <h3>Business Energy</h3>
+        <p class="card-sub">Für Büros, Gewerbe &amp; kleine Unternehmen.</p>
+        <ul class="list-check">
+          <li>Individuelle Angebote ab dem ersten Zähler</li>
+          <li>Mehrzähler- &amp; Standort-Bündelung möglich</li>
+          <li>Persönlicher Ansprechpartner im Vertrieb</li>
+        </ul>
+        <a href="#kontakt" class="card-link">Business-Termin buchen →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- VORTEILE / STEPS -->
+  <section class="section section-alt">
+    <div class="section-header">
+      <h2>So läuft der digitale Wechsel mit SevenLight</h2>
+      <p>Ein klarer Prozess, der für Kunden &amp; Vertriebspartner einfach bleibt.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Daten aufnehmen</h3>
+        <p>PLZ, Verbrauch &amp; Kundendaten werden digital erfasst – per Formular oder Telefon.</p>
       </div>
-      <div class="partner-card">
-        <h3>Deine Vorteile als Partner</h3>
-        <div class="kpi-row">
-          <div class="kpi">
-            <span class="kpi-number">24/7</span>
-            <span class="kpi-label">Online-Zugriff</span>
-          </div>
-          <div class="kpi">
-            <span class="kpi-number">Hybrid</span>
-            <span class="kpi-label">On- & Offline</span>
-          </div>
-          <div class="kpi">
-            <span class="kpi-number">Skalierbar</span>
-            <span class="kpi-label">Strukturfähig</span>
-          </div>
-        </div>
-        <p class="partner-note">
-          Ideal für bestehende Teams, die ihre Energie-Produkte modernisieren
-          oder neu aufbauen möchten.
-        </p>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Tarife vergleichen</h3>
+        <p>Ihr Vertriebspartner prüft die Optionen bei ausgewählten Energieversorgern.</p>
       </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Vertrag digital unterschreiben</h3>
+        <p>Der Antrag wird digital eingereicht – inklusive Wechselservice zum neuen Anbieter.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Übersicht behalten</h3>
+        <p>Dashboard &amp; Benachrichtigungen halten Kunden &amp; Vertriebspartner immer up to date.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERTRIEBSPARTNER -->
+  <section class="section" id="partner">
+    <div class="section-header">
+      <h2>Vertriebspartner im SevenLight Netzwerk</h2>
+      <p>
+        Strukturierter Vertrieb mit klaren Regeln, digitalem Cockpit und transparentem Provisionsmodell.
+      </p>
+    </div>
+
+    <div class="partner-grid">
+      <div class="card card-soft">
+        <h3>Dein Alltag im Netzwerk</h3>
+        <ul class="list-check">
+          <li>Lead-Erfassung über digitale Formulare</li>
+          <li>Übersicht über Anträge &amp; Status</li>
+          <li>Transparente Provisionsübersicht</li>
+        </ul>
+      </div>
+
+      <div class="card card-soft">
+        <h3>Vorteile für Partner</h3>
+        <ul class="list-check">
+          <li>Backoffice-Unterstützung bei Anträgen</li>
+          <li>Schulungen &amp; Onboarding-Prozesse</li>
+          <li>Skalierbares Strukturvertriebsmodell</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partner-cta">
+      <p>Du willst SevenLight als Partner aufbauen?</p>
+      <a href="#kontakt" class="btn btn-primary">Partnergespräch anfragen</a>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section soft-bg">
-    <div class="container">
-      <h2>Häufige Fragen</h2>
-      <div class="faq-list">
-        <details>
-          <summary>Kostet mich der Wechsel etwas?</summary>
-          <p>
-            Der Wechsel des Energieversorgers ist in der Regel kostenfrei.
-            Wir berechnen keine Gebühren für den Vergleich oder den Abschluss.
-          </p>
-        </details>
-        <details>
-          <summary>Wie lange dauert ein Wechsel?</summary>
-          <p>
-            Je nach Versorger erfolgt der Wechsel nach Bestätigung des
-            Antrags zum nächstmöglichen Termin. Den Status kannst du jederzeit
-            bei uns erfragen.
-          </p>
-        </details>
-        <details>
-          <summary>Was passiert mit meinem alten Vertrag?</summary>
-          <p>
-            In den meisten Fällen übernehmen wir die Kündigung beim alten
-            Versorger automatisch. Du musst dich um nichts kümmern.
-          </p>
-        </details>
-        <details>
-          <summary>Ich bin Vertriebspartner. Kann ich mein Team anbinden?</summary>
-          <p>
-            Ja. Seven Light Energy ist von Anfang an darauf ausgelegt,
-            Strukturen abzubilden. Sprich uns an, um Details zu Provisionen,
-            Ebenen und Onboarding zu erhalten.
-          </p>
-        </details>
-      </div>
+  <section class="section section-alt" id="faq">
+    <div class="section-header">
+      <h2>Häufige Fragen (FAQ)</h2>
+      <p>Kurze Antworten auf die wichtigsten Fragen von Kunden und Partnern.</p>
+    </div>
+
+    <div class="faq-list">
+      <details>
+        <summary>Ist SevenLight Energy ein echter Versorger?</summary>
+        <p>
+          In dieser Demo-Version nicht. Die Seite ist als Präsentations- und Vertriebskonzept gedacht.
+          Im echten Betrieb kooperiert SevenLight mit geprüften Energieversorgern.
+        </p>
+      </details>
+
+      <details>
+        <summary>Wie läuft der Wechsel für Kunden ab?</summary>
+        <p>
+          Ein Vertriebspartner erfasst die Kundendaten digital, wählt einen passenden Tarif aus und
+          reicht den Antrag beim Versorger ein. Der Kunde erhält alle Unterlagen transparent erklärt.
+        </p>
+      </details>
+
+      <details>
+        <summary>Welche Rolle spielen Vertriebspartner?</summary>
+        <p>
+          Vertriebspartner beraten Kunden, erfassen Anträge korrekt und werden über ein
+          strukturiertes Provisionsmodell vergütet. Das Backoffice unterstützt im Hintergrund.
+        </p>
+      </details>
+
+      <details>
+        <summary>Kann ich diese Seite für Präsentationen nutzen?</summary>
+        <p>
+          Ja – das Layout ist bewusst neutral gehalten, damit du es für Pitches, Gespräche
+          mit Partnern oder Investoren verwenden kannst.
+        </p>
+      </details>
     </div>
   </section>
 
-  <!-- Kontakt -->
-  <section id="kontakt" class="section">
-    <div class="container contact-grid">
-      <div>
-        <h2>Kontakt aufnehmen</h2>
-        <p class="section-subtitle">
-          Ob du deinen Tarif wechseln möchtest oder eine Struktur im Energiemarkt
-          aufbauen willst – schreib uns kurz, und wir melden uns persönlich.
-        </p>
-        <ul class="contact-info">
-          <li><strong>E-Mail:</strong> info@sevenlight-energy.de (Platzhalter)</li>
-          <li><strong>Standort:</strong> Deutschland / Remote</li>
-        </ul>
-      </div>
-      <form class="contact-form">
-        <div class="form-row">
-          <label>Vollständiger Name</label>
-          <input type="text" placeholder="Dein Name" />
-        </div>
-        <div class="form-row">
-          <label>E-Mail</label>
-          <input type="email" placeholder="name@beispiel.de" />
-        </div>
-        <div class="form-row">
-          <label>Interessiert an</label>
-          <select>
-            <option>Tarifwechsel Strom</option>
-            <option>Tarifwechsel Gas</option>
-            <option>Strom & Gas</option>
-            <option>Vertriebspartner werden</option>
-            <option>Sonstiges</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label>Nachricht</label>
-          <textarea rows="4" placeholder="Wie können wir dir helfen?"></textarea>
-        </div>
-        <button type="button" class="btn primary full">
-          Anfrage absenden (Demo)
-        </button>
-        <p class="hint">
-          Formular ist aktuell nur ein Demo-Beispiel – keine echten Datenübertragungen.
-        </p>
-      </form>
+  <!-- KONTAKT / FOOTER -->
+  <section class="section" id="kontakt">
+    <div class="section-header">
+      <h2>Kontakt &amp; Demo-Anfrage</h2>
+      <p>Nutze dieses Feld einfach als Platzhalter für dein echtes Kontaktformular.</p>
+    </div>
+
+    <div class="card card-soft contact-card">
+      <p><strong>Beispiel:</strong></p>
+      <p>
+        SevenLight Energy<br />
+        Dein Name<br />
+        E-Mail: kontakt@sevenlight-energy.de (Platzhalter)<br />
+      </p>
+      <p>
+        Hier könnte später ein echtes Formular stehen – aktuell dient die Seite als
+        moderner One-Pager für deine Strukturvertriebs-Präsentation.
+      </p>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <span>© 2025 Seven Light Energy – Strom & Gas</span>
-      <div class="footer-links">
+    <div class="footer-inner">
+      <p>© 2025 SevenLight Energy – Demo Landingpage für Strom &amp; Gas</p>
+      <p class="footer-links">
         <a href="#">Impressum (Platzhalter)</a>
+        <span>•</span>
         <a href="#">Datenschutz (Platzhalter)</a>
-      </div>
+      </p>
     </div>
   </footer>
 </body>
