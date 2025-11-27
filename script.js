@@ -1,6 +1,6 @@
 // === SUPABASE SETUP ===
 const supabaseUrl = "https://ymrjacrxdtwnllvybhhcn.supabase.co";
-const supabaseAnonKey = "DEIN_ANON_KEY_HIER_REIN"; // den du kopiert hast
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InltcmphY3hyZHdubGx2eWJobmNuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQxOTM4ODQsImV4cCI6MjA3OTc2OTg4NH0.TU6QUvp_AaOBqtutWyfeTC9yyTxOh6Z41yepRMH651o"; // den du kopiert hast
 
 const supabaseClient = supabase.createClient(supabaseUrl, supabaseAnonKey);
 // IntersectionObserver animations
